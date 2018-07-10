@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+
+	<title>Contact Us | EDC, Thapar University </title>
+	
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+<link rel="icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="./ContactUs/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+	<link rel="stylesheet" href="./ContactUs/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="./ContactUs/style.css">
+	<script src="./ContactUs/jquery.min.js"></script>
+	<script type="text/javascript" src="./ContactUs/jquery.1.8.3.min.js"></script>
+	<script src="./ContactUs/bootstrap.min.js"></script>
+</head>
+<body class="loaded">
+		<div class="burger">
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+		<div class="burger__patty"></div>
+	</div>
+	<nav class="menu">
+		<div class="menu__brand">
+			<img class="menu-bar-img" src="./ContactUs/footer-logo.png" alt="edc-logo">
+			<ul class="menu-list-left">
+				<li class="menu__item"><a href="./Team/team.html" class="menu__link" id="login-button">Team</a></li>
+				<!-- <li class="menu__item"><a href="./bohemian/#!/login" class="menu__link" id= "logout-button">Logout</a></li> -->
+				<li class="menu__item"><a href="./Events/events.html" target="_blank" class="menu__link">Events</a></li>
+				<li class="menu__item"><a href="./sponsors.html" target="_blank" class="menu__link">Associates</a></li>
+				<li class="menu__item"><a href="./Home/home.html#sponsors" target="_blank" class="menu__link">Gallery</a></li>
+				<li class="menu__item"><a href="./ContactUs.html" target="_blank" class="menu__link">Contact Us</a></li>
+			</ul>
+		</div>
+		<ul class="menu__list">
+			<li class="menu__item"><a href="./Team/team.html" class="menu__link"><img src="./ContactUs/photo.png"></a></li>
+		</ul>
+
+	</nav>
+	<!-- full screen menu bar ends -->
+	<div class="container-fluid" style="padding-left: 30px; padding-right: 30px;">
+		<div class="coming-logo">
+			<a href="./Home/home.html"><img src="./ContactUs/footer-logo.png"></a>
+			<p class="coming-logo-head">Entrepreneurship Development Cell, Thapar University</p>
+		</div>
+		<div class="container cover-neon">
+			<h1 class="cover-head">Contact Us</h1>
+		</div>
+		<div class="contact-underliner">
+			<img src="./cus_files/participate-arrow.svg">
+		</div>
+		<div class="card-contact col-sm-12 contact-head"><h2>Secretary General</h2><h4>Sharanpreet Singh</h4><br><p>+91 79864 83954</p></div>
+		<div class="row">
+			<div class="col-sm-4 card-contact"><h2>Find Us On Facebook</h2><p><a href="https://www.facebook.com/tuedcell">www.facebook.com/tuedcell</a></p></div>
+			<div class="col-sm-4 card-contact"><h2>Find us on Instagram</h2><p><a href="https://www.instagram.com/tuedcell">www.instagram.com/tuedcell</a></p></div>
+			<div class="col-sm-4 card-contact"><h2>Find us on LinkedIN</h2><p><a href="https://www.linkedin.com/company/17920191/">www.linkedin.com/company/17920191/</a></div>
+		</div>
+		<div class="card-contact col-sm-12 contact-head"><h2>Drop an E-mail at :</h2><a href="mailto:tuedcell@gmail.com">tuedcell@gmail.com</a></p></div>
+	</div>
+	<hr>
+	<!--footer begins-->
+	<footer class="footer">
+		<div class="footer-logo scroll wow fadeInUp delay-02s">
+		</div>
+		<div class="social-wrapper wow fadeInUp delay-02s">
+			<a class="social-icon" href="https://www.facebook.com/tuedcell"><i class="fa fa-5x fa-facebook-square"></i></a>
+			<a class="social-icon" href="https://www.instagram.com/tuedcell"><i class="fa fa-5x fa-instagram"></i></a>
+			<a class="social-icon" href="https://www.linkedin.com/company/17920191/"><i class="fa fa-5x fa-linkedin"></i></a>
+		</div>
+		<div class="footer-copyright">
+			<span class="copyright">© 2017. All Rights Reserved<br>EDC, Thapar University</span>
+		</div>
+	</footer>
+	<!--footer ends-->
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="footer-address">
+		<h5>STEP Building</h5>
+		<h5>Thapar University, Patiala</h5>
+		<h5>Patiala - 147004</h5>
+	</div>
+
+
+<!-- Pre-loader starts -->
+<script type="text/javascript">
+	$(window).on('load', function() {
+		$('body').delay(350).addClass('loaded');
+	})
+</script>
+<!-- Pre-loader ends -->
+
+<!-- Side menu-bar -->
+<script type="text/javascript">
+	(function() {
+		var Menu = (function() {
+			var burger = document.querySelector('.burger');
+			var menu = document.querySelector('.menu');
+			var menuList = document.querySelector('.menu__list');
+			var brand = document.querySelector('.menu__brand');
+			var menuItems = document.querySelectorAll('.menu__item');
+			var active = false;
+			var toggleMenu = function() {
+				if (!active) {
+					menu.classList.add('menu--active');
+					menuList.classList.add('menu__list--active');
+					brand.classList.add('menu__brand--active');
+					burger.classList.add('burger--close');
+					for (var i = 0, ii = menuItems.length; i < ii; i++) {
+						menuItems[i].classList.add('menu__item--active');
+					}
+					active = true;
+				} else {
+					menu.classList.remove('menu--active');
+					menuList.classList.remove('menu__list--active');
+					brand.classList.remove('menu__brand--active');
+					burger.classList.remove('burger--close');
+					for (var i = 0, ii = menuItems.length; i < ii; i++) {
+						menuItems[i].classList.remove('menu__item--active');
+					}
+					active = false;
+				}
+			};
+			var bindActions = function() {
+				burger.addEventListener('click', toggleMenu, false);
+			};
+			var init = function() {
+				bindActions();
+			};
+			return {
+				init: init
+			};
+		}());
+		Menu.init();
+	}());
+</script>
+<!-- Side menu-bar ends -->
+
+</body></html>
